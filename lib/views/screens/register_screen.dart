@@ -27,6 +27,7 @@ class RegisterScreen extends StatelessWidget {
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
         leading: BackBtn(),
+
       ),
       body: AnnotatedRegion(
         value: SystemUiOverlayStyle(systemNavigationBarColor: Color(0xffF9F9F9)),
