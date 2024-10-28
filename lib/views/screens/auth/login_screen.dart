@@ -1,21 +1,23 @@
-import 'package:e_commerce/custom_widgets/icon_btn.dart';
-import 'package:e_commerce/helpers/app_colors.dart';
-import 'package:e_commerce/helpers/app_images.dart';
 import 'package:e_commerce/custom_widgets/back_btn.dart';
 import 'package:e_commerce/custom_widgets/elevated_btn.dart';
+import 'package:e_commerce/custom_widgets/icon_btn.dart';
 import 'package:e_commerce/custom_widgets/my_text_field.dart';
 import 'package:e_commerce/custom_widgets/top_header_text.dart';
-import 'package:e_commerce/views/screens/forgot_password_screen.dart';
-import 'package:e_commerce/views/screens/register_screen.dart';
+import 'package:e_commerce/helpers/app_images.dart';
+import 'package:e_commerce/views/screens/common/visual_search_screen.dart';
+import 'package:e_commerce/views/screens/auth/forgot_password_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+
+
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
+
   @override
   Widget build(BuildContext context) {
-    /// form key
     GlobalKey<FormState> loginFormKey = GlobalKey<FormState>();
     AppImages appImages = AppImages();
     TextEditingController emailController = TextEditingController();
@@ -107,7 +109,7 @@ class LoginScreen extends StatelessWidget {
                         text: "LOGIN",
                         onPressed: () {
                           if(loginFormKey.currentState!.validate()){
-                            Navigator.push(context, MaterialPageRoute(builder: (context)=> RegisterScreen()));
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=> VisualSearchScreen()));
                           }
                         },
                       ),

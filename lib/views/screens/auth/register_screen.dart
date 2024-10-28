@@ -1,11 +1,12 @@
-import 'package:e_commerce/custom_widgets/icon_btn.dart';
-import 'package:e_commerce/helpers/app_images.dart';
-import 'package:e_commerce/providers/auth_provider.dart';
 import 'package:e_commerce/custom_widgets/back_btn.dart';
 import 'package:e_commerce/custom_widgets/elevated_btn.dart';
+import 'package:e_commerce/custom_widgets/icon_btn.dart';
 import 'package:e_commerce/custom_widgets/my_text_field.dart';
 import 'package:e_commerce/custom_widgets/top_header_text.dart';
-import 'package:e_commerce/views/screens/login_screen.dart';
+import 'package:e_commerce/helpers/app_images.dart';
+import 'package:e_commerce/providers/auth_provider.dart';
+import 'package:e_commerce/views/screens/common/visual_search_screen.dart';
+import 'package:e_commerce/views/screens/auth/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -139,7 +140,7 @@ class RegisterScreen extends StatelessWidget {
                           if(registerFormKey.currentState!.validate()){
                             Navigator.push(
                               context, MaterialPageRoute(
-                                builder: (context) => LoginScreen(),
+                                builder: (context) => VisualSearchScreen(),
                               ),
                             );
                           }

@@ -13,3 +13,4 @@ class AppColors {
   String get nickName => _name;
 
 }
+

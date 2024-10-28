@@ -63,6 +63,8 @@ flutter:
   assets:
     - assets/images/common/icons/
     - assets/images/common/logos/
+    - assets/images/common/images/
+    - assets/images/utils/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -82,6 +84,9 @@ flutter:
          - asset: assets/fonts/metropolis/Metropolis-Regular.otf
          - asset: assets/fonts/metropolis/Metropolis-Medium.otf
          - asset: assets/fonts/metropolis/Metropolis-Bold.otf
+         - asset: assets/fonts/metropolis/Metropolis-ExtraBold.otf
+         - asset: assets/fonts/metropolis/Metropolis-Light.otf
+         - asset: assets/fonts/metropolis/Metropolis-SemiBold.otf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

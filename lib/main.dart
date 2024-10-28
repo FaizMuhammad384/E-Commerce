@@ -1,5 +1,5 @@
 import 'package:e_commerce/providers/auth_provider.dart';
-import 'package:e_commerce/views/screens/register_screen.dart';
+import 'package:e_commerce/views/screens/auth/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -8,8 +8,10 @@ void main() {
   runApp(const MyApp());
 }
 
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
         providers: [
           ChangeNotifierProvider(create: (context) => AuthProvider()),
         ],
-        child: const RegisterScreen(),
+        child: RegisterScreen(),
       ),
     );
   }
