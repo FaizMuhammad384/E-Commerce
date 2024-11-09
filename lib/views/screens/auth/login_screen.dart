@@ -4,8 +4,8 @@ import 'package:e_commerce/custom_widgets/icon_btn.dart';
 import 'package:e_commerce/custom_widgets/my_text_field.dart';
 import 'package:e_commerce/custom_widgets/top_header_text.dart';
 import 'package:e_commerce/helpers/app_images.dart';
-import 'package:e_commerce/views/screens/common/visual_search_screen.dart';
 import 'package:e_commerce/views/screens/auth/forgot_password_screen.dart';
+import 'package:e_commerce/views/screens/common/visual_search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

@@ -1,3 +1,5 @@
+import 'package:e_commerce/custom_widgets/elevated_btn.dart';
+import 'package:e_commerce/views/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -6,6 +8,9 @@ class FindingResultScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Future.delayed(Duration(milliseconds: 300), () {
+    //   Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+    // });
     return AnnotatedRegion(
       value: SystemUiOverlayStyle(systemNavigationBarColor: Color(0xffF9F9F9)),
       child: Scaffold(
@@ -32,6 +37,18 @@ class FindingResultScreen extends StatelessWidget {
                       fontFamily: "MetroPolis",
                     ),
                     textAlign: TextAlign.center,
+                  ),
+                ),
+                SizedBox(height: 20),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                  child: ElevatedBtn(
+                    text: "HomeScreen",
+                    onPressed: () {
+                      Future.delayed(Duration(milliseconds: 300), () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                      });
+                    },
                   ),
                 ),
               ],

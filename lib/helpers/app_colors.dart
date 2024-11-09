@@ -9,6 +9,7 @@ class AppColors {
   String _name = "Faiz";
 
   /// setter
+  /// context => enum context.greyColor
 
   String get nickName => _name;
 

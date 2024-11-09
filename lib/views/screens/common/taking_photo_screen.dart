@@ -35,7 +35,7 @@ class TakingPhotoScreen extends StatelessWidget {
           height: 80,
           decoration: BoxDecoration(
             color: Colors.white,
-          ),
+          ), 
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
